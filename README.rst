@@ -9,6 +9,8 @@ Django UFilter
 
 Django UFilter provides a safe way to filter data via human-friendly URLs.
 
+This project was forked from https://github.com/miki725/django-url-filter, due to the lack of maintenance in the original one.
+
 * Free software: MIT license
 * GitHub: https://github.com/Qu4tro/django-ufilter/
 * Documentation: http://django-ufilter.readthedocs.io/

@@ -1,4 +1,4 @@
-name: Run linters
+name: "[CI] Run linters"
 
 on:
   push:

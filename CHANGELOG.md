@@ -9,7 +9,7 @@ This project was originally forked from [django-url-filter](https://github.com/m
 
 ## [Unreleased]
 
-## [0.4.0] - 2022-05-10
+## [0.4.0] - 2022-06-17
 
 ### Added
 
@@ -20,6 +20,7 @@ This project was originally forked from [django-url-filter](https://github.com/m
 ### Changed
 
 -   Renamed forked package to `django-ufilter`.
+-   In `django_ufilter.integrations.drf`, renamed `DjangoFilterBackend` to `DRFFilterBackend`.
 -   Import sorter from `importanize` to `isort`.
 -   Pin versions on the hooks of the `pre-commit` configuration file.
 -   Moved all configurations to `pyproject.toml` on which support exists.

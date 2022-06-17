@@ -1,15 +1,22 @@
-name: changerelease
+name: "[CD] Update Github releases"
+
 on:
   workflow_dispatch: {}
   push:
     paths: [CHANGELOG.md]
+    branches: [master, main]
     tags: ["*"]
+
+permissions: write-all
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+
     - uses: dropseed/changerelease@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        changelog: CHANGELOG.md
+        tag_prefix: ""
+        remote_changelog: false
