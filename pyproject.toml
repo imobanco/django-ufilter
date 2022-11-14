@@ -28,8 +28,7 @@ readme = "README.rst"
 [tool.poetry.dependencies]
 python = ">=3.7,<4.0"
 django = [
-    {version = "^4", python = ">=3.8"},
-    {version = "^3.2", python = "<=3.9"},
+    {version = "~4", python = ">=3.8"},
 ]
 cached-property = "^1.5.2"
 
